@@ -1,0 +1,281 @@
+
+*** Running vivado
+    with args -log bd_ab_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_ab_wrapper.tcl
+
+
+
+****** Vivado v2025.1 (64-bit)
+  **** SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+  **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+  **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+  **** Start of session at: Wed Sep  9 12:01:40 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source bd_ab_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/2025.1/Vivado/data/ip'.
+Command: synth_design -top bd_ab_wrapper -part xcku5p-ffvb676-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcku5p'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku5p'
+INFO: [Device 21-403] Loading part xcku5p-ffvb676-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 9592
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2030.441 ; gain = 241.227
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bd_ab_wrapper' [c:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/nodo_a.gen/sources_1/bd/bd_ab/hdl/bd_ab_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'bd_ab' [c:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/nodo_a.gen/sources_1/bd/bd_ab/synth/bd_ab.v:13]
+INFO: [Synth 8-6157] synthesizing module 'bd_ab_bd_ab_top_0' [C:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/nodo_a.runs/synth_1/.Xil/Vivado-8928-ArcosLaptop/realtime/bd_ab_bd_ab_top_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_ab_bd_ab_top_0' (0#1) [C:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/nodo_a.runs/synth_1/.Xil/Vivado-8928-ArcosLaptop/realtime/bd_ab_bd_ab_top_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'gty_txdata' of module 'bd_ab_bd_ab_top_0' is unconnected for instance 'bd_ab_top' [c:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/nodo_a.gen/sources_1/bd/bd_ab/synth/bd_ab.v:66]
+WARNING: [Synth 8-7071] port 'frame_pulse' of module 'bd_ab_bd_ab_top_0' is unconnected for instance 'bd_ab_top' [c:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/nodo_a.gen/sources_1/bd/bd_ab/synth/bd_ab.v:66]
+WARNING: [Synth 8-7023] instance 'bd_ab_top' of module 'bd_ab_bd_ab_top_0' has 22 connections declared, but only 20 given [c:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/nodo_a.gen/sources_1/bd/bd_ab/synth/bd_ab.v:66]
+INFO: [Synth 8-6157] synthesizing module 'bd_ab_bd_clk_tx_0' [C:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/nodo_a.runs/synth_1/.Xil/Vivado-8928-ArcosLaptop/realtime/bd_ab_bd_clk_tx_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_ab_bd_clk_tx_0' (0#1) [C:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/nodo_a.runs/synth_1/.Xil/Vivado-8928-ArcosLaptop/realtime/bd_ab_bd_clk_tx_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'locked' of module 'bd_ab_bd_clk_tx_0' is unconnected for instance 'bd_clk_tx' [c:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/nodo_a.gen/sources_1/bd/bd_ab/synth/bd_ab.v:87]
+WARNING: [Synth 8-7023] instance 'bd_clk_tx' of module 'bd_ab_bd_clk_tx_0' has 4 connections declared, but only 3 given [c:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/nodo_a.gen/sources_1/bd/bd_ab/synth/bd_ab.v:87]
+INFO: [Synth 8-6157] synthesizing module 'bd_ab_bd_refbuf_0' [C:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/nodo_a.runs/synth_1/.Xil/Vivado-8928-ArcosLaptop/realtime/bd_ab_bd_refbuf_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_ab_bd_refbuf_0' (0#1) [C:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/nodo_a.runs/synth_1/.Xil/Vivado-8928-ArcosLaptop/realtime/bd_ab_bd_refbuf_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_ab_bd_xdma_0' [C:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/nodo_a.runs/synth_1/.Xil/Vivado-8928-ArcosLaptop/realtime/bd_ab_bd_xdma_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_ab_bd_xdma_0' (0#1) [C:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/nodo_a.runs/synth_1/.Xil/Vivado-8928-ArcosLaptop/realtime/bd_ab_bd_xdma_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'user_lnk_up' of module 'bd_ab_bd_xdma_0' is unconnected for instance 'bd_xdma' [c:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/nodo_a.gen/sources_1/bd/bd_ab/synth/bd_ab.v:96]
+WARNING: [Synth 8-7071] port 'usr_irq_ack' of module 'bd_ab_bd_xdma_0' is unconnected for instance 'bd_xdma' [c:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/nodo_a.gen/sources_1/bd/bd_ab/synth/bd_ab.v:96]
+WARNING: [Synth 8-7071] port 'msi_enable' of module 'bd_ab_bd_xdma_0' is unconnected for instance 'bd_xdma' [c:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/nodo_a.gen/sources_1/bd/bd_ab/synth/bd_ab.v:96]
+WARNING: [Synth 8-7071] port 'msi_vector_width' of module 'bd_ab_bd_xdma_0' is unconnected for instance 'bd_xdma' [c:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/nodo_a.gen/sources_1/bd/bd_ab/synth/bd_ab.v:96]
+WARNING: [Synth 8-7071] port 'm_axi_awid' of module 'bd_ab_bd_xdma_0' is unconnected for instance 'bd_xdma' [c:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/nodo_a.gen/sources_1/bd/bd_ab/synth/bd_ab.v:96]
+WARNING: [Synth 8-7071] port 'm_axi_awaddr' of module 'bd_ab_bd_xdma_0' is unconnected for instance 'bd_xdma' [c:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/nodo_a.gen/sources_1/bd/bd_ab/synth/bd_ab.v:96]
+WARNING: [Synth 8-7071] port 'm_axi_awlen' of module 'bd_ab_bd_xdma_0' is unconnected for instance 'bd_xdma' [c:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/nodo_a.gen/sources_1/bd/bd_ab/synth/bd_ab.v:96]
+WARNING: [Synth 8-7071] port 'm_axi_awsize' of module 'bd_ab_bd_xdma_0' is unconnected for instance 'bd_xdma' [c:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/nodo_a.gen/sources_1/bd/bd_ab/synth/bd_ab.v:96]
+WARNING: [Synth 8-7071] port 'm_axi_awburst' of module 'bd_ab_bd_xdma_0' is unconnected for instance 'bd_xdma' [c:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/nodo_a.gen/sources_1/bd/bd_ab/synth/bd_ab.v:96]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'bd_ab_bd_xdma_0' is unconnected for instance 'bd_xdma' [c:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/nodo_a.gen/sources_1/bd/bd_ab/synth/bd_ab.v:96]
+WARNING: [Synth 8-7071] port 'm_axi_awvalid' of module 'bd_ab_bd_xdma_0' is unconnected for instance 'bd_xdma' [c:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/nodo_a.gen/sources_1/bd/bd_ab/synth/bd_ab.v:96]
+WARNING: [Synth 8-7071] port 'm_axi_awlock' of module 'bd_ab_bd_xdma_0' is unconnected for instance 'bd_xdma' [c:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/nodo_a.gen/sources_1/bd/bd_ab/synth/bd_ab.v:96]
+WARNING: [Synth 8-7071] port 'm_axi_awcache' of module 'bd_ab_bd_xdma_0' is unconnected for instance 'bd_xdma' [c:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/nodo_a.gen/sources_1/bd/bd_ab/synth/bd_ab.v:96]
+WARNING: [Synth 8-7071] port 'm_axi_wdata' of module 'bd_ab_bd_xdma_0' is unconnected for instance 'bd_xdma' [c:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/nodo_a.gen/sources_1/bd/bd_ab/synth/bd_ab.v:96]
+WARNING: [Synth 8-7071] port 'm_axi_wstrb' of module 'bd_ab_bd_xdma_0' is unconnected for instance 'bd_xdma' [c:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/nodo_a.gen/sources_1/bd/bd_ab/synth/bd_ab.v:96]
+WARNING: [Synth 8-7071] port 'm_axi_wlast' of module 'bd_ab_bd_xdma_0' is unconnected for instance 'bd_xdma' [c:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/nodo_a.gen/sources_1/bd/bd_ab/synth/bd_ab.v:96]
+WARNING: [Synth 8-7071] port 'm_axi_wvalid' of module 'bd_ab_bd_xdma_0' is unconnected for instance 'bd_xdma' [c:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/nodo_a.gen/sources_1/bd/bd_ab/synth/bd_ab.v:96]
+WARNING: [Synth 8-7071] port 'm_axi_bready' of module 'bd_ab_bd_xdma_0' is unconnected for instance 'bd_xdma' [c:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/nodo_a.gen/sources_1/bd/bd_ab/synth/bd_ab.v:96]
+WARNING: [Synth 8-7071] port 'm_axi_arid' of module 'bd_ab_bd_xdma_0' is unconnected for instance 'bd_xdma' [c:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/nodo_a.gen/sources_1/bd/bd_ab/synth/bd_ab.v:96]
+WARNING: [Synth 8-7071] port 'm_axi_araddr' of module 'bd_ab_bd_xdma_0' is unconnected for instance 'bd_xdma' [c:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/nodo_a.gen/sources_1/bd/bd_ab/synth/bd_ab.v:96]
+WARNING: [Synth 8-7071] port 'm_axi_arlen' of module 'bd_ab_bd_xdma_0' is unconnected for instance 'bd_xdma' [c:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/nodo_a.gen/sources_1/bd/bd_ab/synth/bd_ab.v:96]
+WARNING: [Synth 8-7071] port 'm_axi_arsize' of module 'bd_ab_bd_xdma_0' is unconnected for instance 'bd_xdma' [c:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/nodo_a.gen/sources_1/bd/bd_ab/synth/bd_ab.v:96]
+WARNING: [Synth 8-7071] port 'm_axi_arburst' of module 'bd_ab_bd_xdma_0' is unconnected for instance 'bd_xdma' [c:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/nodo_a.gen/sources_1/bd/bd_ab/synth/bd_ab.v:96]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'bd_ab_bd_xdma_0' is unconnected for instance 'bd_xdma' [c:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/nodo_a.gen/sources_1/bd/bd_ab/synth/bd_ab.v:96]
+WARNING: [Synth 8-7071] port 'm_axi_arvalid' of module 'bd_ab_bd_xdma_0' is unconnected for instance 'bd_xdma' [c:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/nodo_a.gen/sources_1/bd/bd_ab/synth/bd_ab.v:96]
+WARNING: [Synth 8-7071] port 'm_axi_arlock' of module 'bd_ab_bd_xdma_0' is unconnected for instance 'bd_xdma' [c:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/nodo_a.gen/sources_1/bd/bd_ab/synth/bd_ab.v:96]
+WARNING: [Synth 8-7071] port 'm_axi_arcache' of module 'bd_ab_bd_xdma_0' is unconnected for instance 'bd_xdma' [c:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/nodo_a.gen/sources_1/bd/bd_ab/synth/bd_ab.v:96]
+WARNING: [Synth 8-7071] port 'm_axi_rready' of module 'bd_ab_bd_xdma_0' is unconnected for instance 'bd_xdma' [c:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/nodo_a.gen/sources_1/bd/bd_ab/synth/bd_ab.v:96]
+WARNING: [Synth 8-7071] port 'm_axil_awprot' of module 'bd_ab_bd_xdma_0' is unconnected for instance 'bd_xdma' [c:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/nodo_a.gen/sources_1/bd/bd_ab/synth/bd_ab.v:96]
+WARNING: [Synth 8-7071] port 'm_axil_arprot' of module 'bd_ab_bd_xdma_0' is unconnected for instance 'bd_xdma' [c:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/nodo_a.gen/sources_1/bd/bd_ab/synth/bd_ab.v:96]
+WARNING: [Synth 8-7071] port 'cfg_mgmt_read_data' of module 'bd_ab_bd_xdma_0' is unconnected for instance 'bd_xdma' [c:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/nodo_a.gen/sources_1/bd/bd_ab/synth/bd_ab.v:96]
+WARNING: [Synth 8-7071] port 'cfg_mgmt_read_write_done' of module 'bd_ab_bd_xdma_0' is unconnected for instance 'bd_xdma' [c:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/nodo_a.gen/sources_1/bd/bd_ab/synth/bd_ab.v:96]
+WARNING: [Synth 8-7023] instance 'bd_xdma' of module 'bd_ab_bd_xdma_0' has 75 connections declared, but only 43 given [c:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/nodo_a.gen/sources_1/bd/bd_ab/synth/bd_ab.v:96]
+INFO: [Synth 8-6155] done synthesizing module 'bd_ab' (0#1) [c:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/nodo_a.gen/sources_1/bd/bd_ab/synth/bd_ab.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'bd_ab_wrapper' (0#1) [c:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/nodo_a.gen/sources_1/bd/bd_ab/hdl/bd_ab_wrapper.v:13]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2144.062 ; gain = 354.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2144.062 ; gain = 354.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2144.062 ; gain = 354.848
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2144.062 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/nodo_a.gen/sources_1/bd/bd_ab/ip/bd_ab_bd_xdma_0/bd_ab_bd_xdma_0/bd_ab_bd_xdma_0_in_context.xdc] for cell 'bd_ab_i/bd_xdma'
+Finished Parsing XDC File [c:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/nodo_a.gen/sources_1/bd/bd_ab/ip/bd_ab_bd_xdma_0/bd_ab_bd_xdma_0/bd_ab_bd_xdma_0_in_context.xdc] for cell 'bd_ab_i/bd_xdma'
+Parsing XDC File [c:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/nodo_a.gen/sources_1/bd/bd_ab/ip/bd_ab_bd_clk_tx_0/bd_ab_bd_clk_tx_0/bd_ab_bd_clk_tx_0_in_context.xdc] for cell 'bd_ab_i/bd_clk_tx'
+Finished Parsing XDC File [c:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/nodo_a.gen/sources_1/bd/bd_ab/ip/bd_ab_bd_clk_tx_0/bd_ab_bd_clk_tx_0/bd_ab_bd_clk_tx_0_in_context.xdc] for cell 'bd_ab_i/bd_clk_tx'
+Parsing XDC File [c:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/nodo_a.gen/sources_1/bd/bd_ab/ip/bd_ab_bd_ab_top_0/bd_ab_bd_ab_top_0/bd_ab_bd_ab_top_0_in_context.xdc] for cell 'bd_ab_i/bd_ab_top'
+Finished Parsing XDC File [c:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/nodo_a.gen/sources_1/bd/bd_ab/ip/bd_ab_bd_ab_top_0/bd_ab_bd_ab_top_0/bd_ab_bd_ab_top_0_in_context.xdc] for cell 'bd_ab_i/bd_ab_top'
+Parsing XDC File [c:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/nodo_a.gen/sources_1/bd/bd_ab/ip/bd_ab_bd_refbuf_0/bd_ab_bd_refbuf_0/bd_ab_bd_refbuf_0_in_context.xdc] for cell 'bd_ab_i/bd_refbuf'
+Finished Parsing XDC File [c:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/nodo_a.gen/sources_1/bd/bd_ab/ip/bd_ab_bd_refbuf_0/bd_ab_bd_refbuf_0/bd_ab_bd_refbuf_0_in_context.xdc] for cell 'bd_ab_i/bd_refbuf'
+Parsing XDC File [c:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/kcu116_generado.xdc]
+CRITICAL WARNING: [Constraints 18-1056] Clock 'sysclk_300' completely overrides clock 'sysclk_300_clk_p'.
+New: create_clock -period 3.333 -name sysclk_300 [get_ports sysclk_300_clk_p], [c:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/kcu116_generado.xdc:9]
+Previous: create_clock -period 3.333 [get_ports sysclk_300_clk_p], [c:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/nodo_a.gen/sources_1/bd/bd_ab/ip/bd_ab_bd_clk_tx_0/bd_ab_bd_clk_tx_0/bd_ab_bd_clk_tx_0_in_context.xdc:1]
+Resolution: Review the constraint files and remove the redundant clock definition(s). If the clock constraints are not saved in a file, you can first save the constraints to an XDC file and reload the design once the constraints have been corrected.
+Finished Parsing XDC File [c:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/kcu116_generado.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/kcu116_generado.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bd_ab_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/bd_ab_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/nodo_a.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/nodo_a.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2160.098 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2160.098 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2160.098 ; gain = 370.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcku5p-ffvb676-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2160.098 ; gain = 370.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2160.098 ; gain = 370.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2160.098 ; gain = 370.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1824 (col length:96)
+BRAMs: 960 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2170.801 ; gain = 381.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2770.855 ; gain = 981.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2770.855 ; gain = 981.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2781.168 ; gain = 991.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 3016.125 ; gain = 1226.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 3016.125 ; gain = 1226.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 3016.125 ; gain = 1226.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 3016.125 ; gain = 1226.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 3016.125 ; gain = 1226.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 3016.125 ; gain = 1226.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+------------------+----------+
+|      |BlackBox name     |Instances |
++------+------------------+----------+
+|1     |bd_ab_bd_ab_top_0 |         1|
+|2     |bd_ab_bd_clk_tx_0 |         1|
+|3     |bd_ab_bd_refbuf_0 |         1|
+|4     |bd_ab_bd_xdma_0   |         1|
++------+------------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |bd_ab_bd_ab_top |     1|
+|2     |bd_ab_bd_clk_tx |     1|
+|3     |bd_ab_bd_refbuf |     1|
+|4     |bd_ab_bd_xdma   |     1|
+|5     |IBUF            |     1|
++------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 3016.125 ; gain = 1226.910
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 3016.125 ; gain = 1210.875
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 3016.125 ; gain = 1226.910
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 3016.125 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3016.125 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IBUF => IBUF (IBUFCTRL, INBUF): 1 instance 
+
+Synth Design complete | Checksum: 4a3f7534
+INFO: [Common 17-83] Releasing license: Synthesis
+31 Infos, 39 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 3016.125 ; gain = 2297.332
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3016.125 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/nodo_a.runs/synth_1/bd_ab_wrapper.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file bd_ab_wrapper_utilization_synth.rpt -pb bd_ab_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Sep  9 12:02:17 2026...

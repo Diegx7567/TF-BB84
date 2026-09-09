@@ -1,0 +1,30 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.969543",
+   "Default View_TopLeft":"-163,3",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port pcie_refclk -pg 1 -lvl 0 -x 0 -y 230 -defaultsOSRD
+preplace port pcie_mgt -pg 1 -lvl 4 -x 950 -y 100 -defaultsOSRD
+preplace port sysclk_300 -pg 1 -lvl 0 -x 0 -y 330 -defaultsOSRD
+preplace port port-id_pcie_perstn -pg 1 -lvl 0 -x 0 -y 160 -defaultsOSRD
+preplace inst bd_xdma -pg 1 -lvl 2 -x 470 -y 140 -defaultsOSRD
+preplace inst bd_clk_tx -pg 1 -lvl 2 -x 470 -y 330 -defaultsOSRD
+preplace inst bd_ab_top -pg 1 -lvl 3 -x 790 -y 290 -defaultsOSRD
+preplace inst bd_refbuf -pg 1 -lvl 1 -x 160 -y 230 -defaultsOSRD
+preplace netloc bd_refbuf_IBUF_OUT 1 1 1 310 140n
+preplace netloc bd_refbuf_IBUF_DS_ODIV2 1 1 1 300 120n
+preplace netloc pcie_perstn_1 1 0 2 NJ 160 NJ
+preplace netloc bd_xdma_axi_aclk 1 2 1 640 140n
+preplace netloc bd_xdma_axi_aresetn 1 2 1 630 160n
+preplace netloc bd_clk_tx_clk_out1 1 2 1 NJ 320
+preplace netloc pcie_refclk_1 1 0 1 NJ 230
+preplace netloc bd_xdma_pcie_mgt 1 2 2 NJ 100 NJ
+preplace netloc sysclk_300_1 1 0 2 NJ 330 NJ
+preplace netloc bd_xdma_M_AXI_LITE 1 2 1 650 80n
+levelinfo -pg 1 0 160 470 790 950
+pagesize -pg 1 -db -bbox -sgen -130 0 1060 400
+"
+}
+

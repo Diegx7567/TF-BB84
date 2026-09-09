@@ -1,0 +1,412 @@
+
+*** Running vivado
+    with args -log bd_ab_bd_ab_top_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_ab_bd_ab_top_0.tcl
+
+
+
+****** Vivado v2025.1 (64-bit)
+  **** SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+  **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+  **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+  **** Start of session at: Wed Sep  9 11:57:13 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source bd_ab_bd_ab_top_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 655.465 ; gain = 204.617
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/2025.1/Vivado/data/ip'.
+Command: synth_design -top bd_ab_bd_ab_top_0 -part xcku5p-ffvb676-2-e -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcku5p'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku5p'
+INFO: [Device 21-403] Loading part xcku5p-ffvb676-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 25788
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2006.836 ; gain = 242.789
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bd_ab_bd_ab_top_0' [c:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/nodo_a.gen/sources_1/bd/bd_ab/ip/bd_ab_bd_ab_top_0/synth/bd_ab_bd_ab_top_0.v:53]
+INFO: [Synth 8-638] synthesizing module 'ab_synth_top' [C:/Users/diego/Documents/TF-BB84/qkd_abc/node_ab/hdl/ab_synth_top.vhd:57]
+	Parameter G_VERSION bound to: 436736002 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'axil_bridge' [C:/Users/diego/Documents/TF-BB84/qkd_abc/common/hdl/axil_bridge.vhd:53]
+INFO: [Synth 8-256] done synthesizing module 'axil_bridge' (0#1) [C:/Users/diego/Documents/TF-BB84/qkd_abc/common/hdl/axil_bridge.vhd:53]
+INFO: [Synth 8-638] synthesizing module 'ab_top' [C:/Users/diego/Documents/TF-BB84/qkd_abc/node_ab/hdl/ab_top.vhd:52]
+	Parameter G_VERSION bound to: 32'b00011010000010000001000000000010 
+	Parameter N_LANES bound to: 5 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'reg_file' [C:/Users/diego/Documents/TF-BB84/qkd_abc/common/hdl/reg_file.vhd:95]
+	Parameter G_VERSION bound to: 32'b00011010000010000001000000000010 
+INFO: [Synth 8-256] done synthesizing module 'reg_file' (0#1) [C:/Users/diego/Documents/TF-BB84/qkd_abc/common/hdl/reg_file.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'cdc_pulse' [C:/Users/diego/Documents/TF-BB84/qkd_abc/common/hdl/cdc_pulse.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'cdc_pulse' (0#1) [C:/Users/diego/Documents/TF-BB84/qkd_abc/common/hdl/cdc_pulse.vhd:28]
+INFO: [Synth 8-638] synthesizing module 'prbs_gen' [C:/Users/diego/Documents/TF-BB84/qkd_abc/common/hdl/prbs_gen.vhd:30]
+	Parameter NBITS bound to: 64 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'prbs_gen' (0#1) [C:/Users/diego/Documents/TF-BB84/qkd_abc/common/hdl/prbs_gen.vhd:30]
+INFO: [Synth 8-638] synthesizing module 'state_chooser' [C:/Users/diego/Documents/TF-BB84/qkd_abc/node_ab/hdl/state_chooser.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'state_chooser' (0#1) [C:/Users/diego/Documents/TF-BB84/qkd_abc/node_ab/hdl/state_chooser.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'tx_datapath' [C:/Users/diego/Documents/TF-BB84/qkd_abc/node_ab/hdl/tx_datapath.vhd:59]
+	Parameter N_LANES bound to: 5 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'waveform_lut' [C:/Users/diego/Documents/TF-BB84/qkd_abc/node_ab/hdl/waveform_lut.vhd:43]
+	Parameter N_LANES bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'waveform_lut' (0#1) [C:/Users/diego/Documents/TF-BB84/qkd_abc/node_ab/hdl/waveform_lut.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'tx_datapath' (0#1) [C:/Users/diego/Documents/TF-BB84/qkd_abc/node_ab/hdl/tx_datapath.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'word_bit_delay' [C:/Users/diego/Documents/TF-BB84/qkd_abc/common/hdl/word_bit_delay.vhd:48]
+	Parameter W bound to: 64 - type: integer 
+	Parameter MAX_DELAY bound to: 2047 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'word_bit_delay' (0#1) [C:/Users/diego/Documents/TF-BB84/qkd_abc/common/hdl/word_bit_delay.vhd:48]
+INFO: [Synth 8-638] synthesizing module 'clk_counter' [C:/Users/diego/Documents/TF-BB84/qkd_abc/common/hdl/clk_counter.vhd:37]
+	Parameter G_WIN_CYCLES bound to: 250000000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clk_counter' (0#1) [C:/Users/diego/Documents/TF-BB84/qkd_abc/common/hdl/clk_counter.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'ab_top' (0#1) [C:/Users/diego/Documents/TF-BB84/qkd_abc/node_ab/hdl/ab_top.vhd:52]
+INFO: [Synth 8-256] done synthesizing module 'ab_synth_top' (0#1) [C:/Users/diego/Documents/TF-BB84/qkd_abc/node_ab/hdl/ab_synth_top.vhd:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_ab_bd_ab_top_0' (0#1) [c:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/nodo_a.gen/sources_1/bd/bd_ab/ip/bd_ab_bd_ab_top_0/synth/bd_ab_bd_ab_top_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element ar_q_reg was removed.  [C:/Users/diego/Documents/TF-BB84/qkd_abc/common/hdl/axil_bridge.vhd:125]
+WARNING: [Synth 8-6014] Unused sequential element rd_en_reg was removed.  [C:/Users/diego/Documents/TF-BB84/qkd_abc/common/hdl/axil_bridge.vhd:118]
+WARNING: [Synth 8-3936] Found unconnected internal register 'seq_word_q_reg' and it is trimmed from '32' to '24' bits. [C:/Users/diego/Documents/TF-BB84/qkd_abc/node_ab/hdl/tx_datapath.vhd:118]
+WARNING: [Synth 8-7129] Port wdata[31] in module waveform_lut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[30] in module waveform_lut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[29] in module waveform_lut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[28] in module waveform_lut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[27] in module waveform_lut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[26] in module waveform_lut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[25] in module waveform_lut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[24] in module waveform_lut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[23] in module waveform_lut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[22] in module waveform_lut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[21] in module waveform_lut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[20] in module waveform_lut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wdata[19] in module waveform_lut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port seq_data[31] in module tx_datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port seq_data[30] in module tx_datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port seq_data[29] in module tx_datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port seq_data[28] in module tx_datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port seq_data[27] in module tx_datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port seq_data[26] in module tx_datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port seq_data[25] in module tx_datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port seq_data[24] in module tx_datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wstrb[3] in module axil_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wstrb[2] in module axil_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wstrb[1] in module axil_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wstrb[0] in module axil_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port araddr[31] in module axil_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port araddr[30] in module axil_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port araddr[29] in module axil_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port araddr[28] in module axil_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port araddr[27] in module axil_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port araddr[26] in module axil_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port araddr[25] in module axil_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port araddr[24] in module axil_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port araddr[23] in module axil_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port araddr[22] in module axil_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port araddr[21] in module axil_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port araddr[20] in module axil_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port araddr[19] in module axil_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port araddr[18] in module axil_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port araddr[17] in module axil_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port araddr[16] in module axil_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port araddr[15] in module axil_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port araddr[14] in module axil_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port araddr[1] in module axil_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port araddr[0] in module axil_bridge is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2148.992 ; gain = 384.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2148.992 ; gain = 384.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2148.992 ; gain = 384.945
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.066 . Memory (MB): peak = 2148.992 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2236.312 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.139 . Memory (MB): peak = 2254.531 ; gain = 18.219
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2254.531 ; gain = 490.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcku5p-ffvb676-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2254.531 ; gain = 490.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2254.531 ; gain = 490.484
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3936] Found unconnected internal register 'aw_q_reg' and it is trimmed from '32' to '14' bits. [C:/Users/diego/Documents/TF-BB84/qkd_abc/common/hdl/axil_bridge.vhd:86]
+INFO: [Synth 8-802] inferred FSM for state register 'wst_reg' in module 'axil_bridge'
+INFO: [Synth 8-802] inferred FSM for state register 'rst_s_reg' in module 'axil_bridge'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  w_idle |                              001 |                               00
+                    w_do |                              010 |                               01
+                  w_resp |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wst_reg' using encoding 'one-hot' in module 'axil_bridge'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  r_idle |                              001 |                               00
+                  r_wait |                              010 |                               01
+                  r_resp |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rst_s_reg' using encoding 'one-hot' in module 'axil_bridge'
+INFO: [Synth 8-6904] The RAM "tx_datapath:/seq_ram_reg" of size (depth=32 x width=24) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "word_bit_delay:/ram_reg" of size (depth=34 x width=64) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2254.531 ; gain = 490.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 8     
+	   3 Input    7 Bit       Adders := 5     
+	   2 Input    7 Bit       Adders := 5     
+	   2 Input    6 Bit       Adders := 5     
+	   2 Input    5 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input     16 Bit         XORs := 40    
+	   2 Input      1 Bit         XORs := 96    
++---Registers : 
+	              320 Bit    Registers := 2     
+	               64 Bit    Registers := 21    
+	               32 Bit    Registers := 70    
+	               31 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
+	               16 Bit    Registers := 40    
+	               14 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 15    
+	                5 Bit    Registers := 3     
+	                3 Bit    Registers := 9     
+	                1 Bit    Registers := 38    
++---RAMs : 
+	               2K Bit	(34 X 64 bit)          RAMs := 5     
+	              768 Bit	(32 X 24 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   64 Bit        Muxes := 10    
+	   2 Input   32 Bit        Muxes := 3     
+	   2 Input   16 Bit        Muxes := 20    
+	   2 Input    3 Bit        Muxes := 8     
+	   3 Input    2 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 185   
+	   3 Input    1 Bit        Muxes := 16    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1824 (col length:96)
+BRAMs: 960 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-6904] The RAM "word_bit_delay:/ram_reg" of size (depth=34 x width=64) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "bd_ab_bd_ab_top_0/u_txdp/seq_ram_reg" of size (depth=32 x width=24) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "word_bit_delay:/ram_reg" of size (depth=34 x width=64) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "bd_ab_bd_ab_top_0/u_txdp/seq_ram_reg" of size (depth=32 x width=24) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 2437.660 ; gain = 673.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------------+--------------------+-----------+----------------------+---------------+
+|Module Name       | RTL Object         | Inference | Size (Depth x Width) | Primitives    | 
++------------------+--------------------+-----------+----------------------+---------------+
+|word_bit_delay:   | ram_reg            | Implied   | 64 x 64              | RAM64M8 x 20  | 
+|bd_ab_bd_ab_top_0 | u_txdp/seq_ram_reg | Implied   | 32 x 24              | RAM32M16 x 2  | 
++------------------+--------------------+-----------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 2980.422 ; gain = 1216.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 2980.836 ; gain = 1216.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------------+--------------------+-----------+----------------------+---------------+
+|Module Name       | RTL Object         | Inference | Size (Depth x Width) | Primitives    | 
++------------------+--------------------+-----------+----------------------+---------------+
+|word_bit_delay:   | ram_reg            | Implied   | 64 x 64              | RAM64M8 x 20  | 
+|bd_ab_bd_ab_top_0 | u_txdp/seq_ram_reg | Implied   | 32 x 24              | RAM32M16 x 2  | 
++------------------+--------------------+-----------+----------------------+---------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 3048.355 ; gain = 1284.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 3231.027 ; gain = 1466.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 3231.027 ; gain = 1466.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 3231.027 ; gain = 1466.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 3231.027 ; gain = 1466.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 3231.027 ; gain = 1466.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 3231.027 ; gain = 1466.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------------+----------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name       | RTL Name                         | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------------+----------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|bd_ab_bd_ab_top_0 | inst/u_ab/u_txdp/frame_pulse_reg | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++------------------+----------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY8   |    28|
+|2     |LUT1     |    23|
+|3     |LUT2     |   154|
+|4     |LUT3     |   854|
+|5     |LUT4     |   561|
+|6     |LUT5     |   259|
+|7     |LUT6     |  2767|
+|8     |MUXF7    |   512|
+|9     |MUXF8    |    96|
+|10    |RAM32M16 |     2|
+|11    |RAM64M8  |    90|
+|12    |RAM64X1D |    10|
+|13    |SRL16E   |     1|
+|14    |FDRE     |  5146|
+|15    |FDSE     |    33|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 3231.027 ; gain = 1466.980
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:32 ; elapsed = 00:00:41 . Memory (MB): peak = 3231.027 ; gain = 1361.441
+Synthesis Optimization Complete : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 3231.027 ; gain = 1466.980
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 3231.027 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 738 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 3231.027 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 102 instances were transformed.
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 2 instances
+  RAM64M8 => RAM64M8 (RAMD64E(x8)): 90 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 10 instances
+
+Synth Design complete | Checksum: f8436f2
+INFO: [Common 17-83] Releasing license: Synthesis
+53 Infos, 50 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:48 ; elapsed = 00:00:54 . Memory (MB): peak = 3231.027 ; gain = 2517.539
+INFO: [Coretcl 2-1174] Renamed 15 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 3231.027 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/diego/Documents/TF-BB84/qkd_abc/vivado/nodo_a/nodo_a.runs/bd_ab_bd_ab_top_0_synth_1/bd_ab_bd_ab_top_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file bd_ab_bd_ab_top_0_utilization_synth.rpt -pb bd_ab_bd_ab_top_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Sep  9 11:58:20 2026...
